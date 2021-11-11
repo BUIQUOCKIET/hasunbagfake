@@ -1,0 +1,89 @@
+:root {
+    --color-theme: #af1923;
+    --color-text-white: #fff;
+    --color-text-black: #333;
+    --color-foreign-key: #f46700;
+}
+
+* {
+    /*  ke thua tu the chua elements
+        inherit: ke thua.
+    */
+    box-sizing: inherit;
+}
+
+html {
+    /* 
+        62.5% *16px = 10px
+        chinh lai mac dinh la 10px
+    */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Common */
+
+.btn {
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    background-color: currentColor;
+    color: var(--color-theme);
+    display: inline-block;
+    padding: 10px 20px;
+    transition: all 0.45s ease;
+}
+
+.btn span {
+    color: var(--color-text-white);
+}
+
+.btn:hover {
+    filter: brightness(120%);
+    transition: all 0.45s ease;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+/* Modifier */
+
+.footer-social__link--twitter {
+    background-color: currentColor;
+    color: #2daae1;
+}
+
+.footer-social__link--facebook {
+    background-color: currentColor;
+    color: #3b5998;
+}
+
+.footer-social__link--youtube {
+    background-color: currentColor;
+    color: #e62f27;
+}
+
+.footer-social__link--google {
+    background-color: currentColor;
+    color: #dc4a38;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
